@@ -1,7 +1,39 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UserLoginComponent } from './auth-module/user-login/user-login.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { CourseComponent } from './course/course.component';
+import { TodayCourseComponent } from './today-course/today-course.component';
 
-const routes: Routes = [];
+
+const routes: Routes = [
+  {
+    path: '', redirectTo: 'user-login', pathMatch: 'full'
+  },
+  {
+    path: 'user-login', component: UserLoginComponent
+  },
+  {
+    path: 'header', component: HeaderComponent
+  }
+  ,
+  {
+    path: 'home', component: HomeComponent
+  },
+  {
+    path: 'courses', component: CourseComponent
+  }
+
+  ,
+  {
+    path:'today-course', component:TodayCourseComponent
+  }
+  ,
+  {
+    path: 'user-auth', loadChildren: () => import('./auth-module/auth-module.module').then(m => m.AuthModuleModule)
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
