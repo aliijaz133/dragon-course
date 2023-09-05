@@ -14,6 +14,7 @@ import { SearchProductComponent } from './search-product/search-product.componen
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CourseComponent } from './course/course.component';
 import { TodayCourseComponent } from './today-course/today-course.component';
+import { CodespacesComponent } from './codespaces/codespaces.component';
 
 
 
@@ -29,7 +30,8 @@ import { TodayCourseComponent } from './today-course/today-course.component';
     ArticleComponent,
     SearchProductComponent,
     CourseComponent,
-    TodayCourseComponent
+    TodayCourseComponent,
+    CodespacesComponent
   ],
   imports: [
     BrowserModule,

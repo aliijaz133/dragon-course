@@ -5,6 +5,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CourseComponent } from './course/course.component';
 import { TodayCourseComponent } from './today-course/today-course.component';
+import { CodespacesComponent } from './codespaces/codespaces.component';
 
 
 const routes: Routes = [
@@ -23,8 +24,10 @@ const routes: Routes = [
   },
   {
     path: 'courses', component: CourseComponent
+  },
+  {
+    path: 'codespaces', component: CodespacesComponent
   }
-
   ,
   {
     path:'today-course', component:TodayCourseComponent
