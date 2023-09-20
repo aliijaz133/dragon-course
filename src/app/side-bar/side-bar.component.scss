@@ -1,0 +1,41 @@
+.list-container {
+  margin-left: -40px;
+}
+
+.button-list {
+  display: block;
+  background-color: rgb(32, 30, 32);
+  color: #fff;
+  padding: 14px 0px;
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-list:hover {
+  background-color: rgb(102, 117, 112);
+  color: aliceblue;
+}
+
+a {
+  color: #383030;
+  text-decoration: none;
+}
+
+.active {
+  color: #000000;
+  font-weight: bold;
+}
+
+.round-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.js-icon {
+  width: 40px;
+}
+
+.php-icon {
+  width: 40px !important;
+}

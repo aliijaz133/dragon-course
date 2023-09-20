@@ -10,12 +10,21 @@
   margin-bottom: 30px;
 }
 
+app-side-bar {
+  background-color: rgb(75, 69, 63);
+}
+
+
 .text-inherit {
   font-size: 1rem;
 }
 
 .col-xxl-4 {
   width: 300px;
+}
+
+a {
+  cursor: pointer;
 }
 
 @media (max-width: 420px) {
